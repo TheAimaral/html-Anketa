@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Document</title>
+</head>
+<body>
+       <h1 style="color:#8B4513">Анкета посетителя ресторана</h1>
+
+       <form>
+              <fieldset style="color:#A52A2A">
+                     <legend style="color:#00CED1"><b>Контактная информация</b></legend>
+                     <p><label for="name">Имя<em>*</em> </label><input type="text" id="name"></p>
+                     <p><label for="telephone">Телефон<em>*</em> </label><input type="telephone" id="telephone"></p>
+                     <p><label for="email">E-mail<em>*</em> </label><input type="email" id="email"></p>
+                     <p><label for="date">Дата посещения </label><input type="date" id="date"></p>
+              </fieldset>
+              <fieldset style="color:#A52A2A">
+                     <legend style="color:#00CED1"><b>Персональная информация</b></legend>
+                     <p><label for="number">Возраст </label><input type="number" min="1" max="100" step="1" id="number"></p>
+                     <p><label for="kitchen">Любимая кухня </label><select id = "kitchen">
+                            <option value="Kazakh">Национальная</option>
+                            <option value="Italian">Итальянская</option>
+                            <option value="Georgian">Грузинская</option>
+                            <option value="Korean">Корейская</option>
+                            <option value="Chinese">Китайская</option>
+                     </select>
+                     </p>
+                     <p><label for="comments">Какие блюда Вы хотели бы увидеть в меню? </label><textarea id="comments"></textarea></p>
+              </fieldset>
+              <fieldset style="color:#A52A2A">
+                     <legend style="color:#00CED1"><b>Оценка нашего заведения</b></legend>
+                     <p>Почему Вы выбрали наше заведение?</p>
+                     <p><input type="radio" id="Choice1">
+                            <label for="Choice1">Недалеко от дома/работы</label>
+                     </p>
+                     <p><input type="radio" id="Choice2">
+                            <label for="Choice2">Увидел в рекламе</label>
+                     </p>
+                     <p><input type="radio" id="Choice3">
+                            <label for="Choice3">Посоветовали</label>
+                     </p>
+                     <p><input type="radio" id="Choice4">
+                            <label for="Choice4">Оптимальное соотношение цены и качества</label>
+                     </p>
+                     <p>Вы будете рекомендовать наше заведение своим знакомым?</p>
+                     <p><input type="radio" id="Choice5">
+                            <label for="Choice5">Да</label>
+                     </p>
+                     <p><input type="radio" id="Choice6">
+                            <label for="Choice6">Нет</label>
+                     </p>
+              </fieldset>
+              <p><input type="submit" value="Отправить"></p>
+       </form>
+</body>
+</html>
